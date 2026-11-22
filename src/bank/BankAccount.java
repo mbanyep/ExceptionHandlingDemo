@@ -7,5 +7,9 @@ public class BankAccount {
         this.balance = balance;
     }
 
+    public void withdraw(double amount) {
+        balance -= amount;
+        System.out.println("Withdrawal successful: " + amount);
+    }
     
 }
