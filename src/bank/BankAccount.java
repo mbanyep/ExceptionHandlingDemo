@@ -12,6 +12,10 @@ public class BankAccount {
             throw new IllegalArgumentException("Withdrawal amount must be greater than zero.");
         }
 
+        if (amount > balance) {
+            throw new IllegalArgumentException("Insufficient funds.");
+        }
+
         balance -= amount;
         System.out.println("Withdrawal successful: " + amount);
     }
