@@ -10,6 +10,10 @@ public class BankApp {
             System.out.println("Error: " + exception.getMessage());
         }
 
+        finally {
+            System.out.println("Withdrawal attempt finished.");
+        }
+
         account.displayBalance();
 
     }
