@@ -5,7 +5,7 @@ public class BankApp {
         BankAccount account = new BankAccount(500);
 
         try {
-            account.withdraw(600);
+            account.withdraw(200);
         } catch (IllegalArgumentException exception) {
             System.out.println("Error: " + exception.getMessage());
         }
