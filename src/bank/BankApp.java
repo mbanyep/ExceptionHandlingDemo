@@ -9,5 +9,8 @@ public class BankApp {
         } catch (IllegalArgumentException exception) {
             System.out.println("Error: " + exception.getMessage());
         }
+
+        account.displayBalance();
+
     }
 }
